@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<meta charset="utf-8">
+		<title>MangeMakersInc</title>
+	</head>
+    <body>
+        <div class="mainContent">
+            <div class="navBarBox">
+                <div class="navBar">
+                    <div class="links" style="background: lightgoldenrodyellow;"><a href="index.html">Hemsida</a></div>
+				    <div class="links" style="background: pink;"><a href="recept.html">Listsida</a></div>
+				    <div class="links" style="background: lightgreen;"><a href="joakimsida.html">Joakim Broden</a></div>
+				    <div class="links" style="background: lightblue;"><a href="test.html">PHP test</a></div>
+                </div>
+            </div>
+            <div class ="contentBox">
+                <div class="content">
+                    <div>
+                        <div class="formsDiv">
+                            <form action="php/testmedphp.php" method="post" target="output">
+                                <fieldset>
+                                    Enter your name: <input name="nameInput" type="text">
+                                    Enter your last name: <input name="lastNameInput" type="text">
+                                    Enter your date of birth: <input name="dateOfBirth" type="date" min="1900-01-01" max="2022-12-31">
+                                    Enter your favorite fruit: <input name="favoriteFruit" type="text">
+                                    <input type="submit">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                     <div>
+                        <iframe name="output"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

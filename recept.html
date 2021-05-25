@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<meta charset="utf-8">
+		<title>MangeMakersInc</title>
+
+        <script>
+            function showImg(url) {
+                document.getElementById("bild").src = url;
+            }
+
+            function showKanelBulleRecept() {
+                document.getElementById("receptText").innerHTML = "";
+            }
+            function showPajRecept() {
+                document.getElementById("receptText").innerHTML = "tre";
+            }
+        </script>
+	</head>
+    <body>
+        <div class="mainContent">
+            <div class="navBarBox">
+                <div class="navBar">
+                    <div class="links" style="background: lightgoldenrodyellow;"><a href="index.html">Hemsida</a></div>
+				    <div class="links" style="background: pink;"><a href="recept.html">Listsida</a></div>
+				    <div class="links" style="background: lightgreen;"><a href="joakimsida.html">Joakim Broden</a></div>
+				    <div class="links" style="background: lightblue;"><a href="test.html">PHP test</a></div>
+                </div>
+            </div>
+            <div class="contentBox">
+                <div class="content">
+                    <div class="receptListan">
+                        <ul>
+                            <li>
+                                <label>Kanelbulle recept
+                                <button onclick="showImg('images/bulle.jpg')">Visa!</button>
+                                </label>
+                            </li>
+                            <li>
+                                <label>Blåbär- och hallonpaj recept
+                                <button onclick="showImg('images/paj.jpg')">Visa!</button>
+                                </label>
+                            </li>
+                            <li>
+                                <label">Minibaguette recept
+                                <button onclick="showImg('images/minibaguette.JPG')">Visa!</button>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="visaRecept">
+                        <img id="bild" src="images/poggers.png" alt="åh nej">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
